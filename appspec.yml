@@ -4,10 +4,6 @@ files:
   - source: /
     destination: /var/www/html  # Assuming this is the directory where your app will be deployed
 hooks:
-  BeforeInstall:
-    - location: scripts/before_install.sh
-      runas: root
-
   AfterInstall:
     - location: scripts/after_install.sh
       runas: root
